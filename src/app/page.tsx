@@ -1,4 +1,5 @@
 "use client";
+
 import * as RadioGroup from "@radix-ui/react-radio-group";
 import React from "react";
 
@@ -33,7 +34,7 @@ export default function SelectorExample() {
           >
             {options.map((option) => (
               <RadioGroup.Item
-                className="data-[state=checked]:border-blue-500 data-[state=checked]:ring-1 data-[state=checked]:ring-inset data-[state=checked]:ring-blue-500 flex w-full rounded-lg border border-gray-500 p-4 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-blue-500"
+                className="flex w-full rounded-lg border border-gray-500 p-4 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-blue-500 data-[state=checked]:border-blue-500 data-[state=checked]:ring-1 data-[state=checked]:ring-inset data-[state=checked]:ring-blue-500"
                 key={option.value}
                 value={option.value}
               >
